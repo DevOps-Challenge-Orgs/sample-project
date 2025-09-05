@@ -1,3 +1,4 @@
+// A sample JS app
 // index.js
 // Simple Node.js script using lodash
 
