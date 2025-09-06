@@ -1,0 +1,20 @@
+name: Run Bash Script with Secrets
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run script with secret
+        run: |
+          echo "Running script..."
+          bash deploy.sh
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+          DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD}}
+
