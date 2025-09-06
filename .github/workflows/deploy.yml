@@ -1,4 +1,6 @@
 name: Run Bash Script with Secrets
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
