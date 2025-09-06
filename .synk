@@ -1,0 +1,7 @@
+# .snyk file
+version: v1.13.5
+ignore:
+  'SNYK-JS-LODASH-567746':
+    - '*':
+        reason: 'No immediate fix available'
+        expires: '2023-12-31T00:00:00.000Z'
